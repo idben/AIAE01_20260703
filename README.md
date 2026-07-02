@@ -1,6 +1,7 @@
 # AIAE01 Python Basic 20260703
 * [電子版講義網址](https://doc.sagedaben.com/AIAE01)
 * [今天的程式碼網址](https://github.com/idben/AIAE01_20260703)
+* [第三天上午預計課程的練習作業](https://drive.google.com/drive/folders/1jCzKdw9Dd98gfIXtsgKX1Aym6FF34PLV?usp=drive_link)
 
 
 
