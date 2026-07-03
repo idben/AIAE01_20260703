@@ -82,3 +82,12 @@ list7.pop(1)
 list7.clear()
 
 print(list7)
+
+# 合併
+
+list8 = [1,2,3]
+list9 = [4,5,6]
+print(list8 + list9)
+
+list8 += list9
+print(list8)
