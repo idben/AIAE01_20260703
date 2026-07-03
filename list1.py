@@ -32,7 +32,7 @@ list4 = [[0] * 10 for _ in range(2)] # 推導式
 list4[0][9] = 9
 print(list4)
 
-list5 = ["a", "b", "c", "d"]
+list5 = ["a", "b", "b", "b", "c", "d"]
 list5[-1] = "z"
 print(list5[-1]) # 最後一個
 print(len(list5))
@@ -41,3 +41,4 @@ print("d" not in list5)
 # print(list5.index("d")) # 找不到, 會出錯
 print(list5.index("a"))
 print(list5.index("z"))
+print(list5.count("b"))
