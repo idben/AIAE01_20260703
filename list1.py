@@ -84,10 +84,28 @@ list7.clear()
 print(list7)
 
 # 合併
-
 list8 = [1,2,3]
 list9 = [4,5,6]
 print(list8 + list9)
 
 list8 += list9
 print(list8)
+
+# 解包
+list10 = [10, 20, 30]
+money1, money2, money3 = list10
+print(f"money1 是 {money1}")
+print(f"money2 是 {money2}")
+print(f"money3 是 {money3}")
+
+# 解包快速實現變數互換
+money1, money2 = [money2, money1]
+print(f"money1 是 {money1}")
+print(f"money2 是 {money2}")
+
+# 傳統變數互換
+temp_var = money1
+money1 = money2
+money2 = temp_var
+print(f"money1 是 {money1}")
+print(f"money2 是 {money2}")
