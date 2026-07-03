@@ -31,3 +31,36 @@ grades = ["甲", "乙", "優"]
 
 for name, score, grade in zip(names, scores, grades):
     print(f"{name} 的分數是 {score}，{grade}等")
+
+
+# 推導式
+# 傳統寫法, 參考的串列和迴圈分兩塊來寫
+nums = [1, 2, 3]
+squares = []
+
+for num in nums:
+    squares.append(num * num)
+
+# 推導式
+squares2 = [num*num  for num in nums]
+
+print(squares)
+print(squares2)
+
+print([str(n) for n in range(1, 21)])
+
+# 收集 1~20 可以被 3 整除的
+print([n for n in range(1, 21) if n % 3 == 0])
+
+
+words = ["hello", "world"]
+print([w.upper() for w in words])
+
+words = ["apple", "banana", "cherry"]
+print([len(w) for w in words])
+
+print([num for num in range(1, 21) if num % 2 == 0])
+print([num for num in range(1, 21) if num % 2 == 1])
+
+numbers = [-3, -1, 0, 2, 5, -7, 8]
+print([number  for number in numbers if number >= 0])
