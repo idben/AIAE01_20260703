@@ -21,3 +21,13 @@ print(list1)
 list2 = ["a", "b", "c"]
 for index, value  in enumerate(list2, 101):
     print(f"{index}. {value}")
+
+# zip 同時走訪
+# 走訪的串列長度不同時, 會以較短的為主, 不會產生錯誤
+# 同時走訪的組數不限
+names = ["Ben", "Amy", "Kai", "Tom"]
+scores = [90, 80, 100]
+grades = ["甲", "乙", "優"]
+
+for name, score, grade in zip(names, scores, grades):
+    print(f"{name} 的分數是 {score}，{grade}等")
