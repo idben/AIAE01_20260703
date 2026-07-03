@@ -56,4 +56,8 @@ list6.append("b")
 # list6.append(["c", "d"])
 list6.extend(["c", "d"])
 
+
+# 插入
+list6.insert(0, "e")
+
 print(list6)
