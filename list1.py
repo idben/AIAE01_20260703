@@ -42,3 +42,18 @@ print("d" not in list5)
 print(list5.index("a"))
 print(list5.index("z"))
 print(list5.count("b"))
+
+
+
+# 新增元素
+list6 = [1, 2, 3, 4]
+
+# append 加到串列最後
+list6.append("a")
+list6.append("b")
+
+# extend 搭平加到串列最後
+# list6.append(["c", "d"])
+list6.extend(["c", "d"])
+
+print(list6)
