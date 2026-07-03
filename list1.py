@@ -110,10 +110,16 @@ money2 = temp_var
 print(f"money1 是 {money1}")
 print(f"money2 是 {money2}")
 
-# 解包與收集剩餘元素
+# 解包與收集剩餘元素(星號解包)
 list11 = list(range(1, 11))
 # _x1, _x2, *useful_lst = list11
 _, _, *useful_lst = list11
 print(useful_lst)
 *useful_lst2, _, _ = useful_lst
 print(useful_lst2)
+
+
+people = ["Ben", "May", "John", "Cindy"]
+leader, *members = people
+print(leader)
+print(members)
