@@ -33,3 +33,13 @@ for num in range(1, 21):
         continue
     total += num
 print(f"total = {total}")
+print("-"*30)
+
+# 巢狀迴圈
+
+for outside in range(1, 10):
+    # print(f"外層 = {outside}")
+    for inside in range(1, 10):
+        # print(f"  內層 = {inside}")
+        print(f"{outside} x {inside} = {outside * inside}")
+    print("-"*15)
