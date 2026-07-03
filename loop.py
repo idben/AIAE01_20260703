@@ -19,3 +19,17 @@ for data in datas:
         print(f"姓名是: {data["name"]}")
         break
 print("-"*30)
+
+# 迴圈的跳過
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(f"正在處理的數字是: {i}")
+
+# 奇數相加, 用 continue 跳過偶數
+total = 0
+for num in range(1, 21):
+    if num % 2 == 0:
+        continue
+    total += num
+print(f"total = {total}")
