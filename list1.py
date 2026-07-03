@@ -124,9 +124,22 @@ leader, *members = people
 print(leader)
 print(members)
 
-print(members[3])
+# print(members[3]) # 取用超出索引, 會有 indexError
 
 s = "a,b,c"
 list12 = s.split(",")
 print(list12)
 print(" ".join(list12))
+
+
+# 邊跑迴圈邊移除有可能會遇到索引位移
+# 解決是複製一份出來跑迴圈
+# 對原始串列做移除
+# .copy() 複製 list (淺拷貝)
+# .deepcopy() (深拷貝)
+lst = [2, 4, 6, 8]
+for num in lst.copy():
+    if num % 2 == 0:
+        lst.remove(num)
+
+print(lst)
