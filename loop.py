@@ -72,3 +72,15 @@ for product in products:
 print(results1)
 print(results2)
 print(results3)
+print("-"*30)
+
+# 實際應用: 改檔名
+filenames = ["vacation.jpg", "notes.txt", "dinner.png", "selfie.jpg"]
+file_prefix = "2026-07-03_"
+
+results4 = []
+for filename in filenames:
+    if filename.endswith(".jpg") or filename.endswith(".png"):
+        new_filename = f"{file_prefix}{filename}"
+        results4.append(new_filename)
+print(results4)
