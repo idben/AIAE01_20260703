@@ -124,6 +124,7 @@ leader, *members = people
 print(leader)
 print(members)
 
+print(members[3])
 
 s = "a,b,c"
 list12 = s.split(",")
