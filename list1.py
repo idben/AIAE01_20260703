@@ -31,3 +31,6 @@ print(list3)
 list4 = [[0] * 10 for _ in range(2)] # 推導式
 list4[0][9] = 9
 print(list4)
+
+list5 = ["a", "b", "c", "d"]
+print(list5[-1]) # 最後一個
