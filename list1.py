@@ -35,3 +35,9 @@ print(list4)
 list5 = ["a", "b", "c", "d"]
 list5[-1] = "z"
 print(list5[-1]) # 最後一個
+print(len(list5))
+print("d" in list5)
+print("d" not in list5)
+# print(list5.index("d")) # 找不到, 會出錯
+print(list5.index("a"))
+print(list5.index("z"))
