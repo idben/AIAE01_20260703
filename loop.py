@@ -43,3 +43,32 @@ for outside in range(1, 10):
         # print(f"  內層 = {inside}")
         print(f"{outside} x {inside} = {outside * inside}")
     print("-"*15)
+
+
+# 實際應用
+products = [
+    {"name": "筆電", "price": 35000, "category": "3C"},
+    {"name": "滑鼠", "price": 800, "category": "3C"},
+    {"name": "咖啡豆", "price": 450, "category": "食品"},
+    {"name": "鍵盤", "price": 1500, "category": "3C"}
+]
+print("-"*30)
+
+# 想要搜尋出分類是 3c 的所有資料
+# 想要搜尋出單價是 1000 元以下的所有資料
+# 想要搜尋出分類是 3c 而且單價是 1000 元的所有資料
+
+results1 = []
+results2 = []
+results3 = []
+for product in products:
+    if product["category"] == "3C":
+        results1.append(product)
+    if product["price"] < 1000:
+        results2.append(product)
+    if product["category"] == "3C" and product["price"] < 1000:
+        results3.append(product)
+
+print(results1)
+print(results2)
+print(results3)
