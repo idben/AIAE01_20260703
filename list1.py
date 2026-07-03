@@ -33,4 +33,5 @@ list4[0][9] = 9
 print(list4)
 
 list5 = ["a", "b", "c", "d"]
+list5[-1] = "z"
 print(list5[-1]) # 最後一個
