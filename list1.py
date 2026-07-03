@@ -61,3 +61,24 @@ list6.extend(["c", "d"])
 list6.insert(0, "e")
 
 print(list6)
+
+# 刪除元素
+
+list7 = list(range(1, 11))
+
+# 移除 by 值
+list7.remove(2)
+
+# 移除 by 索引
+del list7[2]
+del list7[2:5]
+
+# pop 刪除尾端
+list7.pop()
+list7.pop(0)
+list7.pop(1)
+
+# 清除全部
+list7.clear()
+
+print(list7)
