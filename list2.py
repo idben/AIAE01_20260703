@@ -14,3 +14,7 @@ print(list1[::-1]) # 返轉
 list1[1:1] = ["a", "b", "c"] # 插入
 
 print(list1)
+
+list2 = ["a", "b", "c"]
+for index, value  in enumerate(list2, 101):
+    print(f"{index}. {value}")
